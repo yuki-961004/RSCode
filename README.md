@@ -4,7 +4,7 @@ A dark theme for the RStudio IDE. Based on the [Monokai Dimmed Theme for RStudio
 
 ## Install:
 
-1. download file from this website [RSCode.rstheme](https://github.com/yuki-961004/RSCode/RSCode.rstheme)
+1. download file from this website [RSCode.rstheme](https://github.com/yuki-961004/RSCode/blob/main/RSCode.rstheme)
 2. Open RStudio -> Tools -> Global Options
 3. Appearance -> Add... -> Find and Select `RSCode.rstheme`
 
