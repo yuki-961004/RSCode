@@ -323,11 +323,15 @@
   border-color: #212121;
 }
 
-/* inactive tabs */
-table.rstheme_tabLayoutCenter,
+/* 1. 设置标签栏区域的背景色 */
 .rstudio-themes-flat .rstudio-themes-dark-grey .gwt-TabLayoutPanelTabs,
 .rstheme_multiPodUtilityTabArea {
   background: #222222 !important;
+}
+
+/* 2. 单独设置未激活标签页的背景色 */
+.rstudio-themes-flat .gwt-TabLayoutPanelTab:not(.gwt-TabLayoutPanelTab-selected) table.rstheme_tabLayoutCenter {
+  background: #333333 !important;
 }
 
 /* 所有窗口标签的字体颜色 */
@@ -2709,7 +2713,7 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 
 /* tab下的横线 */
 .rstudio-themes-flat .gwt-TabLayoutPanelTab-selected .gwt-TabLayoutPanelTabInner .rstheme_tabLayoutCenter {
-  box-shadow: 0 -2px 0 #EEEEEE inset;
+  box-shadow: 0 -2.5px 0 #EEEEEE inset;
   border-radius: 0 !important;
 }
 
@@ -2788,7 +2792,7 @@ input#rstudio_command_palette_search {
 }
 
 .rstudio-themes-flat > :not(.gwt-DialogBox-ModalDialog) .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs > div:empty {
-  height: 40px !important;
+  height: 25px !important;
 }
 
 .rstudio-themes-flat .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
@@ -2812,7 +2816,8 @@ input#rstudio_command_palette_search {
 
 .rstudio-themes-flat .windowframe .gwt-TabLayoutPanel > div:last-child,
 .rstudio-themes-flat .gwt-TabLayoutPanel.rstudio_source_panel > div:last-child {
-  top: 38px !important;
+  /* 标签下方留白高度 */
+  top: 23px !important;
 }
 
 .windowframe > div:last-child > div > div > div[aria-hidden="true"] + div + div {
