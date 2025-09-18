@@ -663,133 +663,73 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   text-decoration: line-through;
 }
 
-.xtermColor0 {
-  color: #2e3436 !important;
-}
+/* VS Code Dark+ ANSI Colors */
 
-.xtermBgColor0 {
-  background-color: #2e3436;
-}
+/* --- 标准颜色 (0-7) --- */
+/* Black / ANSI 0 */
+.xtermColor0 { color: #000000 !important; }
+.xtermBgColor0 { background-color: #000000; }
 
-.xtermColor1 {
-  color: #cc0000 !important;
-}
+/* Red / ANSI 1 */
+.xtermColor1 { color: #cd3131 !important; }
+.xtermBgColor1 { background-color: #cd3131; }
 
-.xtermBgColor1 {
-  background-color: #cc0000;
-}
+/* Green / ANSI 2 */
+.xtermColor2 { color: #0dbc79 !important; }
+.xtermBgColor2 { background-color: #0dbc79; }
 
-.xtermColor2 {
-  color: #4e9a06 !important;
-}
+/* Yellow / ANSI 3 */
+.xtermColor3 { color: #e5e510 !important; }
+.xtermBgColor3 { background-color: #e5e510; }
 
-.xtermBgColor2 {
-  background-color: #4e9a06;
-}
+/* Blue / ANSI 4 */
+.xtermColor4 { color: #2472c8 !important; }
+.xtermBgColor4 { background-color: #2472c8; }
 
-.xtermColor3 {
-  color: #c4a000 !important;
-}
+/* Magenta / ANSI 5 */
+.xtermColor5 { color: #bc3fbc !important; }
+.xtermBgColor5 { background-color: #bc3fbc; }
 
-.xtermBgColor3 {
-  background-color: #c4a000;
-}
+/* Cyan / ANSI 6 */
+.xtermColor6 { color: #11a8cd !important; }
+.xtermBgColor6 { background-color: #11a8cd; }
 
-.xtermColor4 {
-  color: #3465a4 !important;
-}
+/* White / ANSI 7 */
+.xtermColor7 { color: #e5e5e5 !important; }
+.xtermBgColor7 { background-color: #e5e5e5; }
 
-.xtermBgColor4 {
-  background-color: #3465a4;
-}
+/* --- 高亮颜色 (8-15) --- */
+/* Bright Black (Gray) / ANSI 8 */
+.xtermColor8 { color: #666666 !important; }
+.xtermBgColor8 { background-color: #666666; }
 
-.xtermColor5 {
-  color: #75507b !important;
-}
+/* Bright Red / ANSI 9 */
+.xtermColor9 { color: #f14c4c !important; }
+.xtermBgColor9 { background-color: #f14c4c; }
 
-.xtermBgColor5 {
-  background-color: #75507b;
-}
+/* Bright Green / ANSI 10 */
+.xtermColor10 { color: #23d186 !important; }
+.xtermBgColor10 { background-color: #23d186; }
 
-.xtermColor6 {
-  color: #06989a !important;
-}
+/* Bright Yellow / ANSI 11 */
+.xtermColor11 { color: #f5f543 !important; }
+.xtermBgColor11 { background-color: #f5f543; }
 
-.xtermBgColor6 {
-  background-color: #06989a;
-}
+/* Bright Blue / ANSI 12 */
+.xtermColor12 { color: #3b8eea !important; }
+.xtermBgColor12 { background-color: #3b8eea; }
 
-.xtermColor7 {
-  color: #d3d7cf !important;
-}
+/* Bright Magenta / ANSI 13 */
+.xtermColor13 { color: #d670d6 !important; }
+.xtermBgColor13 { background-color: #d670d6; }
 
-.xtermBgColor7 {
-  background-color: #d3d7cf;
-}
+/* Bright Cyan / ANSI 14 */
+.xtermColor14 { color: #29b8db !important; }
+.xtermBgColor14 { background-color: #29b8db; }
 
-.xtermColor8 {
-  color: #555753 !important;
-}
-
-.xtermBgColor8 {
-  background-color: #555753;
-}
-
-.xtermColor9 {
-  color: #ef2929 !important;
-}
-
-.xtermBgColor9 {
-  background-color: #ef2929;
-}
-
-.xtermColor10 {
-  color: #8ae234 !important;
-}
-
-.xtermBgColor10 {
-  background-color: #8ae234;
-}
-
-.xtermColor11 {
-  color: #fce94f !important;
-}
-
-.xtermBgColor11 {
-  background-color: #fce94f;
-}
-
-.xtermColor12 {
-  color: #729fcf !important;
-}
-
-.xtermBgColor12 {
-  background-color: #729fcf;
-}
-
-.xtermColor13 {
-  color: #ad7fa8 !important;
-}
-
-.xtermBgColor13 {
-  background-color: #ad7fa8;
-}
-
-.xtermColor14 {
-  color: #34e2e2 !important;
-}
-
-.xtermBgColor14 {
-  background-color: #34e2e2;
-}
-
-.xtermColor15 {
-  color: #eeeeec !important;
-}
-
-.xtermBgColor15 {
-  background-color: #eeeeec;
-}
+/* Bright White / ANSI 15 */
+.xtermColor15 { color: #e5e5e5 !important; }
+.xtermBgColor15 { background-color: #e5e5e5; }
 
 .xtermColor16 {
   color: #000000 !important;
