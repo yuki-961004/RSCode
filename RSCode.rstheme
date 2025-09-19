@@ -65,9 +65,10 @@
   width: 2px;
 }
 
+/* 80字符竖线 */
 .ace_print-margin {
   width: 2px;
-  background: #1A1A1A;
+  background: #333333;
 }
 
 /* 系统文字, 比如chunk头部, console输出信息 */
