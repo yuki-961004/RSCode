@@ -16,8 +16,8 @@
   --language-constant: #569CD6;
   --numeric-constant: #B5CEA8;
   --string: #CE9178;
-  --regex: #CE9178;
-  --keyword: #d861d8;
+  --regex: #d16969;
+  --keyword: #C586C0;
   --function-declaration: #DCDCAA;
   --variable: #EEEEEE;
   --comment: #6A9955;
@@ -28,32 +28,45 @@
 }
 
 .ace_paren_color_0 {
-  color: #d861d8 !important; 
+  color: #FFD700 !important;  /* gold */
 }
 
 .ace_paren_color_1 {
-  color: #79d0ff !important; 
+  color: #DA70D6 !important;  /* orchid purple */
 }
 
 .ace_paren_color_2 {
-  color: #b2e295 !important; 
+  color: #179FFF !important;  /* bright blue */
 }
 
 .ace_paren_color_3 {
-  color: #e59f51 !important; 
+  color: #FFD700 !important;  /* gold */
 }
 
 .ace_paren_color_4 {
-  color: #e28d65 !important;
+  color: #DA70D6 !important;  /* orchid purple */
 }
 
 .ace_paren_color_5 {
-  color: #68b44a !important; 
+  color: #179FFF !important;  /* bright blue */
 }
 
 .ace_paren_color_6 {
-  color: #3b90e3 !important;
+  color: #FFD700 !important;  /* gold */
 }
+
+.ace_paren_color_7 {
+  color: #DA70D6 !important;  /* orchid purple */
+}
+
+.ace_paren_color_8 {
+  color: #179FFF !important;  /* bright blue */
+}
+
+.ace_paren_color_9 {
+  color: #FFD700 !important;  /* gold */
+}
+
 
 .ace_gutter {
   background: #212121;
