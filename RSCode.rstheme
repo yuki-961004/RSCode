@@ -3088,3 +3088,65 @@ input#rstudio_command_palette_search {
     margin-right: 5px;
     margin-left: 5px;
 }
+
+/* --- Package Update Dialog (DataGrid) Row Colors --- */
+/* (Class names from user-provided HTML) */
+
+/* 奇数行 (Odd Rows) */
+.GO2HCLQBKKC {
+  background-color: #FFFFFF !important; 
+  color: #333333 !important; 
+}
+
+/* 偶数行 (Even Rows) */
+.GO2HCLQBKLC {
+  background-color: #F3F5F6 !important; 
+  color: #333333 !important; 
+}
+
+/* * 鼠标悬停行 (Hover Row) 
+ */
+.GO2HCLQBKKC.dataGridHoveredRow,
+.GO2HCLQBKLC.dataGridHoveredRow {
+  background-color: transparent !important; /* Set to transparent to remove hover color */
+}
+
+/* --- Package Update Dialog - Checkbox Styling --- */
+
+/* Target checkboxes specifically within the Update Packages dialog (.GO2HCLQBOY) and its rows */
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKKC input[type="checkbox"],
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKLC input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #FFFFFF !important; /* Light background */
+  border: 1px solid #B0B0B0 !important; /* Light border */
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  color: transparent !important; /* Hide any potential default glyph */
+}
+
+/* Target the CHECKED state ::before pseudo-element specifically within this dialog */
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKKC input[type="checkbox"]:checked::before,
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKLC input[type="checkbox"]:checked::before {
+  content: "\2713" !important;          /* Checkmark character ✓ */
+  color: #333333 !important;          /* << YOUR DESIRED DARK CHECKMARK COLOR */
+  background-color: transparent !important; /* Ensure pseudo-element itself isn't colored */
+  font-size: 12px;                   /* Adjust size if needed */
+  font-weight: bold;
+  position: absolute;
+  top: -2px;                         /* Fine-tune vertical position */
+  left: 1px;                          /* Fine-tune horizontal position */
+  line-height: 1;
+}
+
+/* (Optional) Focus style */
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKKC input[type="checkbox"]:focus,
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKLC input[type="checkbox"]:focus {
+  outline: 1px solid #569CD6; /* Use a theme color for focus */
+  outline-offset: 1px;
+}
