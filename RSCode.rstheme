@@ -507,24 +507,6 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   /* Works on Chrome, Edge, and Safari */
 }
 
-.rstudio-themes-flat ::-webkit-scrollbar {
-  width: auto;
-}
-
-.rstudio-themes-flat *::-webkit-scrollbar-track {
-  background: #333333;
-}
-
-.rstudio-themes-flat *::-webkit-scrollbar-thumb {
-  background-color: #333333;
-  border-radius: 0px;
-  border: 2px solid #212121;
-}
-
-.rstudio-themes-flat *::-webkit-scrollbar-thumb:hover {
-  background-color: #2b2b2b;
-}
-
 /* fix overly zealous css rules */
 .gwt-DialogBox-ModalDialog .dialogContent .gwt-Label {
   color: #333333;
@@ -3089,26 +3071,108 @@ input#rstudio_command_palette_search {
     margin-left: 5px;
 }
 
+/* --- about R Studio --- */
+
+/* 修改 About RStudio 窗口中的 Build 信息颜色 */
+.GNJ4OY0CEED {
+  color: #EEEEEE !important;
+}
+
+/* 修改 About RStudio 窗口中的版本号及环境信息颜色 */
+.gwt-InlineLabel {
+  color: #EEEEEE !important;
+}
+
 /* --- Package Update Dialog (DataGrid) Row Colors --- */
 /* (Class names from user-provided HTML) */
 
-/* 奇数行 (Odd Rows) */
-.GO2HCLQBKKC {
-  background-color: #FFFFFF !important; 
-  color: #333333 !important; 
+/* Check Update 窗口表头背景与文字 */
+.GNJ4OY0CKLC {
+  background-color: #222222 !important;
+  color: #EEEEEE !important;
+  border-bottom: 1px solid #333333 !important;
+  border-top: 1px solid #333333 !important;
 }
 
-/* 偶数行 (Even Rows) */
-.GO2HCLQBKLC {
-  background-color: #F3F5F6 !important; 
-  color: #333333 !important; 
+/* 确保表头内的链接或特殊文字也是浅色 */
+.GNJ4OY0CKLC div {
+  color: #EEEEEE !important;
 }
 
-/* * 鼠标悬停行 (Hover Row) 
- */
-.GO2HCLQBKKC.dataGridHoveredRow,
-.GO2HCLQBKLC.dataGridHoveredRow {
-  background-color: transparent !important; /* Set to transparent to remove hover color */
+/* 统一修改表格、表头单元格和普通单元格的边框颜色 */
+.GNJ4OY0CLMC, 
+.GNJ4OY0CLMC th, 
+.GNJ4OY0CLMC td {
+  border-color: #333333 !important;
+}
+
+/* 针对你抓取到的具体单元格类名进行加固 */
+.GNJ4OY0CDLC, 
+.GNJ4OY0CKLC {
+  border: 1px solid #333333 !important;
+}
+
+/* 奇数行 (Odd Rows): __gwt_row="1" */
+.GNJ4OY0CEMC {
+  background-color: #222222 !important;
+  color: #EEEEEE !important;
+}
+
+/* 偶数行 (Even Rows): __gwt_row="0" */
+.GNJ4OY0CELC {
+  background-color: #2A2A2A !important;
+  color: #EEEEEE !important;
+}
+
+/* 鼠标悬停行 (Hover Row) */
+.GNJ4OY0CEMC.dataGridHoveredRow,
+.GNJ4OY0CELC.dataGridHoveredRow {
+  background-color: #333333 !important;
+}
+
+/* 右下角拖动进度条时颜色 */
+.GNJ4OY0CNH {
+  background-color: #222222 !important;
+}
+
+/* --- 区块分割线颜色 --- */
+
+/* 修改分隔线（Splitters）的颜色 */
+.rstudio-themes-flat .rstudio-themes-dark-grey .gwt-SplitLayoutPanel-HDragger, 
+.rstudio-themes-flat .rstudio-themes-dark-grey .gwt-SplitLayoutPanel-VDragger {
+  /* 将原本的 transparent 修改为 #333333 */
+  background: #333333 !important;
+}
+
+/* 鼠标悬停在分隔线上时的颜色反馈 */
+.gwt-SplitLayoutPanel-HDragger:hover, 
+.gwt-SplitLayoutPanel-VDragger:hover {
+  background: #444444 !important;
+}
+
+/* --- 全局滚动条样式覆盖 (确保 Help 界面生效) --- */
+
+/* 1. 滚动条整体 */
+::-webkit-scrollbar {
+  width: 10px !important;  /* 给予固定宽度，不要用 auto */
+  height: 10px !important;
+}
+
+/* 2. 滚动条轨道 (滑槽背景) */
+::-webkit-scrollbar-track {
+  background: #222222 !important; /* 设为背景色 222222 */
+}
+
+/* 3. 滚动条滑块 (Thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #333333 !important; /* 你需要的灰色 333333 */
+  border-radius: 0px !important;
+  border: 2px solid #222222 !important; /* 通过边框制造缩进效果 */
+}
+
+/* 4. 滑块悬停效果 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444444 !important;
 }
 
 /* --- Package Update Dialog - Checkbox Styling --- */
