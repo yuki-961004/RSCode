@@ -1,6 +1,5 @@
 /* rs-theme-name: RSCode */
 /* rs-theme-is-dark: TRUE */
-/* ====== 1. 全局变量与核心颜色 (Variables) ====== */
 :root {
   /* editor */
   --editor-background-color: 30, 30, 30;
@@ -28,18 +27,47 @@
   --inline-code: var(--string);
 }
 
-/* ====== 2. 语法高亮与代码元素 (Syntax Highlighting & Rainbow Parens) ====== */
-.ace_paren_color_0, .ace_paren_color_3, .ace_paren_color_6, .ace_paren_color_9 {
+.ace_paren_color_0 {
   color: #FFD700 !important;  /* gold */
 }
-.ace_paren_color_1, .ace_paren_color_4, .ace_paren_color_7 {
+
+.ace_paren_color_1 {
   color: #DA70D6 !important;  /* orchid purple */
 }
-.ace_paren_color_2, .ace_paren_color_5, .ace_paren_color_8 {
+
+.ace_paren_color_2 {
   color: #179FFF !important;  /* bright blue */
 }
 
-/* ====== 3. 编辑器组件 (行号、光标、边距等) ====== */
+.ace_paren_color_3 {
+  color: #FFD700 !important;  /* gold */
+}
+
+.ace_paren_color_4 {
+  color: #DA70D6 !important;  /* orchid purple */
+}
+
+.ace_paren_color_5 {
+  color: #179FFF !important;  /* bright blue */
+}
+
+.ace_paren_color_6 {
+  color: #FFD700 !important;  /* gold */
+}
+
+.ace_paren_color_7 {
+  color: #DA70D6 !important;  /* orchid purple */
+}
+
+.ace_paren_color_8 {
+  color: #179FFF !important;  /* bright blue */
+}
+
+.ace_paren_color_9 {
+  color: #FFD700 !important;  /* gold */
+}
+
+
 .ace_gutter {
   background: #212121;
   color: #474747;
@@ -264,6 +292,10 @@
   background: #61616180;
 }
 
+.rstudio-themes-flat.editor_dark.ace_editor_theme a {
+  color: #fff !important;
+}
+
 .ace_layer {
   z-index: 4;
 }
@@ -284,7 +316,6 @@
 
 
 /* ---- RStudio Theme ---- */
-/* ====== 4. RStudio 界面框架基础 (整体背景、边框) ====== */
 /* background */
 .rstudio-themes-flat .rstudio-themes-dark-grey {
   background: #222222 !important;
@@ -306,7 +337,6 @@
   border-color: #212121;
 }
 
-/* ====== 5. 标签页与工具栏 (Tabs & Toolbars) ====== */
 /* 1. 设置标签栏区域的背景色 */
 .rstudio-themes-flat .rstudio-themes-dark-grey .gwt-TabLayoutPanelTabs,
 .rstheme_multiPodUtilityTabArea {
@@ -371,7 +401,6 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   background: #333333 !important;
 }
 
-/* ====== 6. 弹出菜单与提示框 (Popups & Menus) ====== */
 /* menu background */
 .rstudio-themes-flat .popupMiddleCenter,
 .rstudio-themes-flat .menuPopupMiddleCenter,
@@ -429,8 +458,13 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   color: #f3f5f6;
 }
 
-/* ====== 7. 数据查看器 (Data Viewer & DataGrid) ====== */
 /* datagrid */
+.rstudio-themes-dark .dataGridHeader,
+.rstudio-themes-dark tr[__gwt_header_row] > :-webkit-any(td, th),
+.rstudio-themes-dark .dataTables_info {
+  background-color: #212121 !important;
+  border-color: #333333 !important;
+}
 
 /* hacky toolbars section */
 .rstudio-themes-flat .rstudio-themes-dark-grey {
@@ -465,13 +499,17 @@ table.rstheme_tabLayoutCenter .gwt-Label,
     border-color: #1A1A1A;
 }
 
-/* ====== 8. 滚动条与进度条 (Scrollbars & Progress) ====== */
 /* scrollbars */
 .rstudio-themes-flat {
   /* Works on Firefox */
   scrollbar-width: auto;
   scrollbar-color: #333333 #212121;
   /* Works on Chrome, Edge, and Safari */
+}
+
+/* fix overly zealous css rules */
+.gwt-DialogBox-ModalDialog .dialogContent .gwt-Label {
+  color: #333333;
 }
 
 /* job progress bar */
@@ -548,7 +586,6 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   border: none;
 }
 
-/* ====== 9. 终端 Terminal (Xterm 颜色与光标) ====== */
 .terminal {
   background-color: #212121;
   color: #B0BEC5;
@@ -2621,7 +2658,6 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   border-color: #333333 !important;
 }
 
-/* ====== 10. 命令面板 (Command Palette) ====== */
 #rstudio_command_palette_search,
 #rstudio_command_palette_list [id^="rstudio_command_"],
 input#rstudio_command_palette_search {
@@ -2631,6 +2667,10 @@ input#rstudio_command_palette_search {
 
 #rstudio_command_palette_list {
   background-color: #212121;
+  border-color: #212121;
+}
+
+.rstudio-themes-flat .rstudio-themes-border {
   border-color: #212121;
 }
 
@@ -2671,7 +2711,6 @@ input#rstudio_command_palette_search {
   vertical-align: bottom;
 }
 
-/* ====== 11. 标签页细节尺寸与图标 ====== */
   /* 标签的长宽高 */
 .rstudio-themes-flat > :not(.gwt-DialogBox-ModalDialog) .gwt-TabLayoutPanel > div[aria-hidden="true"] + div {
   height: 25px !important;
@@ -2721,7 +2760,6 @@ input#rstudio_command_palette_search {
   height: 40px !important;
 }
 
-/* ====== 12. 弹窗与设置面板 (Dialogs & Options) ====== */
 .rstudio-themes-flat [id^="rstudio_dialog"],
 .rstudio-themes-flat :not(.gwt-MenuItem-selected):not(.gwt-MenuItem) > [id^="rstudio_label"],
 .rstudio-themes-flat .dialogContent [id^="rstudio_label_"][id$="_panel"] :not(button) > table > tbody > td,
@@ -2915,7 +2953,6 @@ input#rstudio_command_palette_search {
     color: #FFCB6B;
 }
 
-/* ====== 13. 特定功能界面 (使用混淆类名的区域，例如：项目切换、数据导入、包更新等) ====== */
 /* Choose layout of panels */
 .GCHYANPCKRB td.GCHYANPCKRB {
     background-color: #333333;
@@ -3140,8 +3177,9 @@ input#rstudio_command_palette_search {
 
 /* --- Package Update Dialog - Checkbox Styling --- */
 
-/* Target checkboxes specifically within the Update Packages dialog and its rows */
-.gwt-DialogBox [role="grid"] input[type="checkbox"] {
+/* Target checkboxes specifically within the Update Packages dialog (.GO2HCLQBOY) and its rows */
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKKC input[type="checkbox"],
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKLC input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3157,7 +3195,8 @@ input#rstudio_command_palette_search {
 }
 
 /* Target the CHECKED state ::before pseudo-element specifically within this dialog */
-.gwt-DialogBox [role="grid"] input[type="checkbox"]:checked::before {
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKKC input[type="checkbox"]:checked::before,
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKLC input[type="checkbox"]:checked::before {
   content: "\2713" !important;          /* Checkmark character ✓ */
   color: #333333 !important;          /* << YOUR DESIRED DARK CHECKMARK COLOR */
   background-color: transparent !important; /* Ensure pseudo-element itself isn't colored */
@@ -3170,7 +3209,8 @@ input#rstudio_command_palette_search {
 }
 
 /* (Optional) Focus style */
-.gwt-DialogBox [role="grid"] input[type="checkbox"]:focus {
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKKC input[type="checkbox"]:focus,
+.gwt-DialogBox.GO2HCLQBOY .GO2HCLQBKLC input[type="checkbox"]:focus {
   outline: 1px solid #569CD6; /* Use a theme color for focus */
   outline-offset: 1px;
 }
